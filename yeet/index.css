@@ -1,0 +1,78 @@
+body, html{ margin:0;padding:0;font-family:Arial; }
+* { box-sizing:border-box }
+
+body{
+    background:url(./img/Limbo_bakgrunn_vinner.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height:400vh;
+    background-color:black;  
+}
+
+section {
+    height:100vh;
+}
+
+.hover-for-bein:hover  .bein1 {
+    animation: bein1 5s 1s infinite ease-out alternate; 
+}
+
+.hover-for-bein:hover  .bein2 {
+    animation: bein2 5s infinite ease-out;
+}
+
+.hover-for-bein:hover  .bein3 {
+    animation: bein3 5s infinite ease-out;
+}
+ 
+
+
+
+
+
+@keyframes bein1 {
+    0% {
+        transform: translateX(0) translateY(0);
+        
+        
+    }
+    100% {
+        transform: translateX(+100px) translateY(100px);
+        
+    }
+    
+
+    
+
+}
+
+
+
+@keyframes bein2 {
+    0% {
+        transform: translateX(0) translateY(0);
+        
+    }
+    20% {
+        transform: translateX(+50px) translateY(20px);
+        
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+
+@keyframes bein3 {
+    0% {
+        transform: translateX(-100) translateY(0);
+        
+    }
+    20% {
+        transform: translateX(+70px) translateY(-100px);
+        
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}

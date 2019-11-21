@@ -1,0 +1,33 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+* {
+    box-sizing: border-box
+}
+
+main {
+    display:grid;
+    place-items:center;
+    Height:100vh;
+   
+    
+}
+
+article {
+    transition:1s ease;
+    transform-origin:center center;  
+}
+
+#circle:hover ~ article{
+    transform:scale(2);
+    transform:rotate(1turn) scale(2);
+    transform:scaleY(1turn) scale(2);
+    transform:scale(2);
+    transform:skewx(20deg) scale(2);
+    transform: rotateY(90deg);
+    transform: translate(-50vw);
+}
